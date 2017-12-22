@@ -1,1 +1,1 @@
-This is a starter folder for creating chrome extensions with 1 popup page.
+A timer based off the pomodoro study technique, customizable with different time intervals.
