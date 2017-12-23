@@ -1,9 +1,4 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
   <head>
     <!--
@@ -15,11 +10,18 @@
      <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
-    <h1>Tomato</h1><small>Your Pomodoro Timer</small>
-
-    <h3 id="time">0:00</h3>
-    <button type="button">stop</button>
+    <div id="container">
+      <h1>Pomodoro Study</h1><small>Your Pomodoro Helper</small>
+      <div id="current-state">
+        <h2 id="current-time"></h2>
+      </div>
+      <div id="controls">
+        <div class="controls-buttons-group">
+          <button type="button" id="stop">stop</button>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="moment.js"></script>
-    <script type="text/javascript" src="timer.js"></script>
+    <script src="timer.js"></script>
   </body>
 </html>
