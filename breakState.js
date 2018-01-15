@@ -7,7 +7,7 @@ function BreakState() {
 	this.opt = {
 		type: "basic",
 		title: "Break's over!",
-		message: "Your pomodoro period will start in 10 seconds.",
+		message: "Your Pomodoro study period will begin in 10 seconds.",
 		iconUrl: "pomodoro.png"
 	};
 	this.notificationBaseId = "breakOver";
